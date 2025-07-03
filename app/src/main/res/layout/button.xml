@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/mainTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control Flashlight"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/turnFlashlightOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="onClick"
+        android:text="Turn rear flashlight on" />
+
+    <Button
+        android:id="@+id/turnFlashlightOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TurnFlashlightOff"
+        android:text="Turn rear flashlight off" android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/turnSubFlashlightOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TurnSubFlashlightOn"
+        android:text="Turn front flashlight on" android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/turnSubFlashlightOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TurnSubFlashlightOff"
+        android:text="Turn front flashlight off" android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/subTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app needs SELinux to be Permissive to work properly."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" android:layout_marginTop="40dp" android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/sepermissive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setPermissive"
+        android:text="Set SELinux to Permissive" android:layout_margin="5dp" />
+
+</LinearLayout>
