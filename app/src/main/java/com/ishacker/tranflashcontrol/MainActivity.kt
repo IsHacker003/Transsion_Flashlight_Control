@@ -1,14 +1,10 @@
 package com.ishacker.tranflashcontrol
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.hardware.camera2.CameraManager
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import java.io.FileOutputStream
-import java.io.IOException
 import android.widget.Toast;
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
