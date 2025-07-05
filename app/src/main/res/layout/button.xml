@@ -49,14 +49,14 @@
         android:id="@+id/subTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="If you get crashes, you may need to set SELinux to Permissive."
+        android:text="This app can also control OTG"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2" android:layout_marginTop="40dp" android:textSize="18sp" />
 
     <Button
-        android:id="@+id/sepermissive"
+        android:id="@+id/otgact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="setPermissive"
-        android:text="Set SELinux to Permissive (needs root)" android:layout_margin="5dp" />
+        android:onClick="goToOtg"
+        android:text="OTG Control" android:layout_margin="5dp" />
 
 </LinearLayout>

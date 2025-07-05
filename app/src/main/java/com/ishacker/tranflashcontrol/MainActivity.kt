@@ -1,6 +1,7 @@
 package com.ishacker.tranflashcontrol
 
 import android.content.Context
+import android.content.Intent
 import android.hardware.camera2.CameraManager
 import android.os.Bundle
 import android.view.View
@@ -33,9 +34,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val cameraId = cameraManager.cameraIdList[1]
         cameraManager.setTorchMode(cameraId, false)
     }
-    fun setPermissive(p0: View?) {
-        Toast.makeText(this, "Please grant root", Toast.LENGTH_LONG).show();
-        Runtime.getRuntime().exec("/debug_ramdisk/su -c /system/bin/setenforce 0")
+    fun goToOtg(p0: View?) {
+        val intent = Intent(this, OtgActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onClick(p0: View?) {
