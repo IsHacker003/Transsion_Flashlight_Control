@@ -6,7 +6,6 @@ import android.hardware.camera2.CameraManager
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Toast;
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
